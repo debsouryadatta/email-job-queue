@@ -8,6 +8,9 @@ COPY package.json pnpm-lock.yaml ./
 # Install pnpm
 RUN npm install -g pnpm
 
+# Install tsc
+RUN npm install -g typescript
+
 # Install dependencies
 RUN pnpm install
 
